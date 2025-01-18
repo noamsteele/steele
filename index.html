@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Protection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1a1a1a; /* Space grey background */
+      color: #f0f0f0; /* Soft white text */
+    }
+    #login, #welcome {
+      text-align: center;
+    }
+    #welcome {
+      display: none;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      background-color: #333333; /* Darker grey input background */
+      color: #f0f0f0; /* Soft white text for input */
+    }
+    input:focus {
+      border-color: #666666; /* Slightly brighter border on focus */
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #444444; /* Button background color */
+      color: #f0f0f0; /* Button text color */
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #555555; /* Brighter grey on hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Login Screen -->
+  <div id="login">
+    <h1>Enter Password</h1>
+    <input type="password" id="password" placeholder="Password" onkeydown="checkEnter(event)">
+    <button onclick="authenticate()">Submit</button>
+  </div>
+
+  <!-- Welcome Screen -->
+  <div id="welcome">
+    <h1>Welcome, bigSteele</h1>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
