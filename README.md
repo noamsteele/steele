@@ -1,6 +1,8 @@
 # steele
 A personal dashboard to track household finances
 
+**No sensitive data**
+
 # Steele Financial Dashboard
 
 A simple web-based dashboard for tracking financial portfolio values.
