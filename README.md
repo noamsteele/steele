@@ -1,7 +1,7 @@
 # steele
 A personal dashboard to track household finances
 
-**No sensitive data**
+**No sensitive data (ex. account numbers, passwords, etc.)**
 
 # Steele Financial Dashboard
 
